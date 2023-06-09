@@ -1,0 +1,9 @@
+.appbar {
+    background-color: transparent !important;
+    color: var(--primary-color);
+    padding: 0.5rem 5%;
+}
+
+.logo {
+    height: 3.5rem;
+}

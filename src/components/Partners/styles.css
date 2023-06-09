@@ -1,0 +1,18 @@
+.partners {
+    height: 3.5rem;
+}
+
+.campost {
+    height: 6.5rem;
+}
+
+.partnerStack {
+    justify-content: space-between;
+    align-items: center;
+    padding: 6% 10%;
+}
+
+.partner-container  {
+    margin: 0;
+    padding: 0;
+}
