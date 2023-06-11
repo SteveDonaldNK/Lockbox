@@ -1,6 +1,6 @@
 .hero {
-    width: 100%;
-    height: 100vh;
+    width: var(--full-width);
+    height: var(--full-vertical);
     padding: 0;
     margin: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.6)), url('../../assets/hero.jpg');
@@ -11,12 +11,12 @@
 }
 
 .heroBox {
-    width: 100%;
+    width: var(--full-width);
     color: var(--white-color);
     text-align: center;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: var(--half-width);
+    top: var(--half-height);
     transform: translate(-50%, -50%)
 }
 
@@ -42,7 +42,7 @@
     border: 2px solid var(--white-color) !important;
     border-radius: 0 !important;
     font-size: 1rem !important;
-    font-weight: 300;
+    font-weight: var(--heading-font-weight);
     letter-spacing: 0.1rem;
 }
 

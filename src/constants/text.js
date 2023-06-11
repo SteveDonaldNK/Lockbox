@@ -20,4 +20,23 @@ const ABOUT = {
     }
 }
 
-export { HERO, ABOUT }
+const FEATURES = {
+    headingBlue: "Les benefices",
+    heading: " d'un abonnement chez lockbox",
+    features: {
+        unique: {
+            heading: 'MORE Expertise',
+            text: `We are the leader in parcel locker solutions - supporting major residential, retail, carrier, university, and commercial clients around the world.`,
+        },
+        lockers: {
+            heading: 'MORE Expertise',
+            text: `We offer a variety of locker types and sizes to support our clients’ ranging needs and business requirements.`,
+        },
+        parcel: {
+            heading: 'MORE Expertise',
+            text: 'Our solutions process nearly 75 million parcels annually from all major global carriers.',
+        },
+    }
+}
+
+export { HERO, ABOUT, FEATURES }

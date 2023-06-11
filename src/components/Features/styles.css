@@ -1,0 +1,61 @@
+.feature-container {
+    margin: 0;
+    padding: var(--page-padding);
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.feature-heading::before {
+    content: '';
+    position: absolute;
+    left: -5%;
+    transform: rotate(20deg);
+    height: 3.7rem;
+    width: 0.45rem;
+    background-color: var(--primary-color);
+}
+
+.feature-heading-container {
+    position: relative !important;
+}
+
+.feature-heading-container, .feature-timeline {
+    width: 50%;
+}
+
+.feature-heading {
+    font-weight: var(--heading-weight) !important;
+}
+
+.intersect {
+    position: sticky !important;
+    top: 50%;
+}
+
+.feature-blue-heading {
+    color: var(--primary-color) ;
+}
+
+.feature-icons {
+    color: var(--icon-color) !important;
+    transform: scale(140%);
+    margin-top: 0.5rem;
+}
+
+.feature-time-connector {
+    background-color: var(--icon-color) !important;
+    height: 5rem;
+    margin: 1rem 0;
+}
+
+.feature-subHeading {
+    font-weight: var(--heading-weight) !important;
+    font-size: 1.5rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.feature-list::before {
+    content: none !important;
+}

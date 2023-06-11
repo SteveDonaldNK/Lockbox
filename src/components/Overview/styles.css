@@ -1,21 +1,20 @@
-.about-container {
+.overview-container {
     margin: 0;
     padding: var(--page-padding);
-    padding-top: 0 !important;
     display: flex;
     position: relative;
     justify-content: space-between;
 }
 
-.about-textBox {
+.overview-textBox {
     width: var(--half-width);
 }
 
-.about-imageBox {
+.overview-imageBox {
     height: fit-content;
 }
 
-.about-textBox::before {
+.overview-textBox::before {
     content: '';
     position: absolute;
     left: 8%;
@@ -25,20 +24,20 @@
     background-color: var(--primary-color);
 }
 
-.about-image {
+.overview-image {
     height: 32rem;
 }
 
-.about-blue-heading {
+.overview-blue-heading {
     color: var(--primary-color);
 }
 
-.about-heading {
+.overview-heading {
     font-weight: var(--heading-weight) !important;
     line-height: var(--heading-line-height);
 }
 
-.aboutBtn {
+.overviewBtn {
     border-radius: 0 !important;
     border: 2px solid !important;
     font-weight: 300 !important;
@@ -46,7 +45,7 @@
     padding: 0.6rem 1rem !important;
 }
 
-.aboutBtn:hover {
+.overviewBtn:hover {
     background-color: var(--primary-color) !important;
     color: var(--white-color) !important;
 }

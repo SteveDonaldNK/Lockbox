@@ -2,6 +2,15 @@
     --primary-color: #1877F2;
     --white-color: #FFF;
     --dark-color: #000;
+    --icon-color: #3CB8EF;
+    --heading-weight: 700;
+    --heading-line-height: '110%';
+    --page-padding: 5% 10%;
+    --half-width: 50%;
+    --half-height: 50%;
+    --full-vertical: 100vh;
+    --full-width: 100%;
+    --full-height: 100%
 }
 
 * {
