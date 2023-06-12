@@ -1,0 +1,35 @@
+.testimonial-container {
+    padding: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.testimonial-card {
+    flex-basis: 30%;
+    flex-shrink: 1;
+    border: 2px solid var(--primary-color) !important;
+    border-radius: 0 !important;
+    text-align: center;
+}
+
+.testimonial-cardContent {
+    height: var(--full-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-town {
+    margin: 2.5rem 0 1.8rem !important;
+}
+
+.testimonial-body {
+    margin-bottom: 5rem !important;
+}
+
+.testimonial-name, .testimonial-status {
+    font-size: 0.9rem !important;
+    font-weight: var(--heading-weight) !important;
+
+}

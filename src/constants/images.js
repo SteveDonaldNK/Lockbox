@@ -4,5 +4,7 @@ import dhl from "../assets/dhl.png";
 import fedex from "../assets/fedex.png";
 import campost from "../assets/campost.png";
 import about from "../assets/about.jpg";
+import lockers from "../assets/lockers.png";
+import map from "../assets/cameroon.png";
 
-export { heroImg, logo, dhl, fedex, campost, about }
+export { heroImg, logo, dhl, fedex, campost, about, lockers, map }

@@ -1,0 +1,25 @@
+.cta-container {
+    margin: 0 10% 5%;
+    padding: var(--page-padding);
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.cta-heading {
+    font-weight: var(--heading-weight) !important;
+    color: var(--white-color);
+}
+
+.cta-btn {
+    border: 2px solid var(--white-color) !important;
+    background-color: var(--white-color) !important;
+    margin-top: 2rem !important;
+    padding: 0.7rem 2rem !important;
+    border-radius: 0 !important;
+    font-size: 1.1rem !important;
+}
+
+.cta-btn:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color) !important;
+}

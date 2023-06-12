@@ -17,11 +17,13 @@
 }
 
 .feature-heading-container {
-    position: relative !important;
+    position: relative;
 }
 
 .feature-heading-container, .feature-timeline {
-    width: 50%;
+    flex-basis: 48%;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .feature-heading {

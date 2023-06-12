@@ -6,12 +6,14 @@
     justify-content: space-between;
 }
 
-.overview-textBox {
-    width: var(--half-width);
+.overview-textBox, .overview-imageBox {
+    flex-basis: 48%;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
 .overview-imageBox {
-    height: fit-content;
+    position: relative;
 }
 
 .overview-textBox::before {
@@ -25,7 +27,11 @@
 }
 
 .overview-image {
-    height: 32rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .overview-blue-heading {

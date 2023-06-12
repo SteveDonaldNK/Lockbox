@@ -39,4 +39,40 @@ const FEATURES = {
     }
 }
 
-export { HERO, ABOUT, FEATURES }
+const MAP = {
+    heading: "Deliver MORE with Parcel Pending by Quadient Smart Lockers",
+    text: "",
+}
+
+const TESTIMONIALS = [
+    {
+        neighborhood: 'Essos',
+        text: `"With more than 60% of online orders picked up in our stores, 
+        [the Parcel Pending by Quadient lockers give] our customers one more option 
+        and the added convenience to control how and when they get that order."`,
+        name: 'Evina Evina',
+        socialStatus: 'Economic operator'
+    },{
+        neighborhood: 'Essos',
+        text: `"The partnership with Quadient is completely in line with DHL’s strategy, 
+        offering greater flexibility for both customers and e-retailers. 
+        With a wide range of parcel lockers, we get closer to our customers 
+        and can in a simpler way be proactive in building up our delivery network.
+         Quadient’s solution also meets the strong demand we have on user-friendliness and simplicity in our customer interfaces."`,
+        name: 'Evina Evina',
+        socialStatus: 'Economic operator'
+    },{
+        neighborhood: 'Essos',
+        text: `"With more than 60% of online orders picked up in our stores, 
+        [the Parcel Pending by Quadient lockers give] our customers one more option and 
+        the added convenience to control how and when they get that order."`,
+        name: 'Evina Evina',
+        socialStatus: 'Economic operator'
+    },
+]
+
+const CALLTOACTION = {
+    heading: "Deliver MORE With Smart Lockers From Parcel Pending by Quadient",
+}
+
+export { HERO, ABOUT, FEATURES, MAP, TESTIMONIALS, CALLTOACTION }

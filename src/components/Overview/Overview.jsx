@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
 import { ABOUT } from '../../constants/text'
-import { about } from '../../constants/images'
+import { lockers } from '../../constants/images'
 import "./styles.css"
 
 export default function About() {
@@ -19,10 +19,10 @@ export default function About() {
             <Typography my={2} color='GrayText'>
                 {ABOUT.text.p2}
             </Typography>
-            <Button variant='outlined' className='overviewBtn'>EN SAVOIR PLUS SUR NOUS</Button>
+            <Button variant='outlined' className='overviewBtn'>START USING LOCKBOX</Button>
         </Box>
         <Box className='overview-imageBox'>
-            <img className='overview-image' src={about} alt="Sure Delivery" />
+            <img className='overview-image' src={lockers} alt="Sure Delivery" />
         </Box>
     </div>
   )

@@ -1,0 +1,22 @@
+.stats-container {
+    padding: var(--page-padding);
+}
+
+.stat-stack {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat {
+    font-weight: var(--heading-weight) !important;
+    color: var(--primary-color)
+}
+
+.stat-label {
+    margin-top: 1.5rem !important;
+    font-size: 1.2rem !important;
+}

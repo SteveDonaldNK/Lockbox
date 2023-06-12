@@ -1,0 +1,16 @@
+.map-container {
+    padding: var(--page-padding);
+    background-color: var(--map-color);
+    text-align: center;
+}
+
+.map {
+    height: 30rem;
+    margin: 2rem auto 0;
+}
+
+.map-heading {
+    text-align: left;
+    color: var(--white-color);
+    font-weight: var(--heading-weight) !important;
+}
