@@ -56,3 +56,75 @@
     background-color: var(--primary-color) !important;
     color: var(--white-color) !important;
 }
+
+@media screen and (max-width: 1280px) {
+
+    .about-textBox::before {
+        left: 3%;
+        height: 3rem;
+        width: 0.4rem;
+    }
+
+    .about-container {
+        padding: 5%;
+    }
+    
+    .about-heading {
+        font-size: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .about-textBox::before {
+        position: static;
+        display: block;
+        height: 3.2rem;
+        margin-left: 0.6rem;
+    }
+
+    .about-container {
+        padding: var(--page-padding);
+        flex-direction: column;
+    }
+    
+    .about-image {
+        width: 100%;
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .about-textBox::before {
+        height: 2.5rem;
+        width: 0.4rem;
+    }
+
+    .about-heading {
+        font-size: 2.5rem !important;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .aboutBtn {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .about-textBox::before {
+        height: 1.5rem;
+        width: 0.25rem;
+        margin-left: 0.4rem;
+    }
+
+    .about-heading {
+        font-size: 1.8rem !important;
+    }
+}

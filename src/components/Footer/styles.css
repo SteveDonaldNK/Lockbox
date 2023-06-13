@@ -31,7 +31,7 @@
 .footer-btn {
     border: 2px solid var(--primary-color) !important;
     background-color: var(--primary-color) !important;
-    border-radius: 0;
+    border-radius: 0 !important;
     padding: 0.65rem 1.5rem;
 }
 
@@ -44,4 +44,11 @@
 .bottom-footer {
     text-align: center;
     margin-top: 2%;
+}
+
+@media screen and (max-width: 1200px) {
+    .top-footer {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }

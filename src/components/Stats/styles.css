@@ -20,3 +20,22 @@
     margin-top: 1.5rem !important;
     font-size: 1.2rem !important;
 }
+
+@media screen and (max-width: 900px) {
+    .stat {
+        font-size: 2.5rem !important;
+    }    
+
+    .stat-label {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .stat-stack {
+        flex-direction: column !important;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4rem;
+    }
+}

@@ -7,7 +7,7 @@ import "./styles.css"
 export default function Partners() {
   return (
     <div className='partner-container' >
-      <Stack className='partnerStack' direction='row'>
+      <Stack className='partnerStack' direction={{md: 'row'}} spacing={{xs: '3rem'}}>
         <img className='campost' src={campost} alt="campost" />
         <img className='partners' src={dhl} alt="dhl" />
         <img className='partners' src={fedex} alt="fedex" />

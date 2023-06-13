@@ -1,7 +1,28 @@
 .appbar {
-    background-color: transparent !important;
-    color: var(--primary-color);
     padding: 0.5rem 5%;
+    transition: 0.2s ease-out !important;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appbar.scrolled {
+    background-color: var(--white-color) !important;
+}
+
+.appbar-toggler.scrolled {
+    fill: var(--gray-color) !important;
+}
+
+.appbar.scrolled .appbar-link {
+    color: var(--primary-color) !important;
+}
+
+.appbar:not(.scrolled) {
+    background-color: transparent !important;
 }
 
 .logo {

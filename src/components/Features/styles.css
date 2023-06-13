@@ -61,3 +61,66 @@
 .feature-list::before {
     content: none !important;
 }
+
+@media screen and (max-width: 1280px) {
+    .feature-heading::before {
+        height: 3rem;
+        top: 1%;
+        width: 0.4rem;
+    }
+
+    .feature-container {
+        padding: 5%;
+    }
+
+    .feature-heading {
+        font-size: 3.5rem !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .feature-timeline ul {
+        padding: 0;
+    }
+
+    .feature-heading {
+        font-size: 3rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .feature-heading::before {
+        position: static;
+        display: block;
+        height: 3.2rem;
+        margin-left: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .feature-heading {
+        font-size: 2.5rem !important;
+    }
+
+    .feature-heading::before {
+        height: 2.5rem;
+        width: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .feature-heading {
+        font-size: 1.8rem !important;
+    }
+
+    .feature-heading::before {
+        height: 1.5rem;
+        width: 0.25rem;
+        margin: 0.4rem;
+    }
+}
+
+

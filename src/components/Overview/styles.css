@@ -55,3 +55,71 @@
     background-color: var(--primary-color) !important;
     color: var(--white-color) !important;
 }
+
+@media screen and (max-width: 1280px) {
+    .overview-heading {
+        font-size: 3.5rem !important;
+    }
+
+    .overview-container {
+        padding: 5%;
+    }
+
+    .overview-textBox::before {
+        left: 3%;
+        height: 3.2rem;
+        width: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .overview-container {
+        flex-direction: column;
+    }
+
+    .overview-heading {
+        font-size: 3rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .overview-textBox::before {
+        position: static;
+        display: block;
+        height: 3.2rem;
+        margin-left: 0.6rem;
+    }
+
+    .overview-image {
+        width: 100%;
+        position: static;
+        transform: none;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .overview-heading {
+        font-size: 2.5rem !important;
+    }
+
+    .overview-textBox::before {
+        height: 2.5rem;
+        width: 0.4rem;
+    }
+
+    .overviewBtn {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .overview-heading {
+        font-size: 1.8rem !important;
+    }
+
+    .overview-textBox::before {
+        height: 1.5rem;
+        width: 0.25rem;
+        margin: 0.4rem;
+    }
+}

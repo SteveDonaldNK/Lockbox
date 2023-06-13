@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className='footer-container'>
       <div className='top-footer'>
-        <Stack direction='row' spacing={10} alignItems='center'>
+        <Stack gap={{xs: '1rem', lg: 'none'}} direction={{lg: 'row'}} spacing={10} alignItems='center'>
           <img className='footer-logo' src={logo} alt="logo" />
           <Link className='footer-link' href='/about' underline='none'>About us</Link>
           <Link className='footer-link' href='/contact' underline='none'>Contact us</Link>

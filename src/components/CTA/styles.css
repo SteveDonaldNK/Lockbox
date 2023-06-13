@@ -23,3 +23,35 @@
     color: var(--white-color);
     background-color: var(--primary-color) !important;
 }
+
+@media screen and (max-width: 1280px) {
+    .cta-container {
+        margin: 5% !important;
+    }
+
+    .cta-heading {
+        font-size: 3.5rem !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cta-heading {
+        font-size: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cta-heading {
+        font-size: 2.5rem !important;
+    }
+
+    .cta-btn {
+        font-size: 0.9rem !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .cta-heading {
+        font-size: 1.8rem !important;
+    }
+}

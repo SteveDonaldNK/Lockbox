@@ -11,6 +11,13 @@
     border: 2px solid var(--primary-color) !important;
     border-radius: 0 !important;
     text-align: center;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s ease-out !important;
+}
+
+.testimonial-card:hover {
+    transform: scale(90%);
 }
 
 .testimonial-cardContent {
@@ -32,4 +39,22 @@
     font-size: 0.9rem !important;
     font-weight: var(--heading-weight) !important;
 
+}
+
+@media screen and (max-width: 1280px) {
+    .testimonial-container {
+        padding: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .testimonial-container {
+        flex-direction: column !important;
+        gap: 3rem;
+        padding: var(--page-padding);
+    }
+
+    .testimonial-body {
+        margin-bottom: 2rem !important;
+    }
 }

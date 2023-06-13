@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -16,6 +16,7 @@ import Link from '@mui/material/Link';
 
 import './styles.css';
 import { logo } from '../../constants/images';
+import { Stack } from '@mui/material';
 
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Contact'];
@@ -29,6 +30,20 @@ xl, extra-large: 1536px */
 
 export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
+  const [elevation, setElevation] = React.useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isTop = window.scrollY === 0;
+      isTop ? setElevation(0) : setElevation(2)
+      setIsScrolled(!isTop);
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [])
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -37,7 +52,7 @@ export default function DrawerAppBar() {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        <img className='logo' src={logo} alt="" />
       </Typography>
       <Divider />
       <List>
@@ -55,8 +70,9 @@ export default function DrawerAppBar() {
   return (
     <Box>
       <CssBaseline />
-      <AppBar component="nav" elevation={0} className='appbar'>
-        <Toolbar sx={{padding: "0 !important"}}>
+      <AppBar component="nav" elevation={elevation} className={isScrolled ? 'appbar scrolled' : 'appbar'}>
+        <Toolbar className='toolbar' sx={{padding: "0 !important"}}>
+          <img className='logo' src={logo} alt="lock box" />
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -64,16 +80,15 @@ export default function DrawerAppBar() {
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
-            <MenuIcon />
+            <MenuIcon className={isScrolled ? 'appbar-toggler scrolled' : 'appbar-toggler'} />
           </IconButton>
-          <img className='logo' src={logo} alt="lock box" />
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Stack direction='row' justifyContent='space-between' sx={{ display: { xs: 'none', sm: 'flex'}, flexBasis: {sm: '50%', md: '25%'} }}>
             {navItems.map((item) => (
-              <Link href='#' underline='none' mx={3} key={item} sx={{ color: '#fff' }}>
+              <Link href='#' underline='none' className='appbar-link' key={item} sx={{ color: '#fff' }}>
                 {item}
               </Link>
             ))}
-          </Box>
+          </Stack>
         </Toolbar>
       </AppBar>
       <Box component="nav">
