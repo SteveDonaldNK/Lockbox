@@ -1,0 +1,12 @@
+.sidebar {
+    width: min-content !important;
+    height: 100%;
+    margin: 0 !important;
+    padding-top: 1rem;
+    background: linear-gradient(120deg, #2F3CC9, #AA52DD);
+}
+
+.sidebar-icon {
+    color: var(--white-color);
+    transform: scale(120%);
+}
