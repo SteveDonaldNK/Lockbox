@@ -1,0 +1,28 @@
+.active-banner {
+    text-align: center;
+    height: 80%;
+}
+
+.active-banner-image {
+    width: 30rem;
+    user-select: none;
+}
+
+.code-btn {
+    display: block !important;
+    margin: auto !important;
+    border: 2px solid var(--primary-color) !important;
+    border-radius: 0 !important;
+}
+
+@media screen and (max-width: 900px) {
+    .active-banner-image {
+        width: 70% !important;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .active-banner-image {
+        width: 100% !important;
+    }    
+}

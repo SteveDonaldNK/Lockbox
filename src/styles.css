@@ -12,7 +12,8 @@
     --half-height: 50%;
     --full-vertical: 100vh;
     --full-width: 100%;
-    --full-height: 100%
+    --full-height: 100%;
+    --card-color: #1B1E41;
 }
 
 * {

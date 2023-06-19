@@ -5,17 +5,17 @@ import { logo } from '../../constants/images'
 
 import './styles.css'
 
-export default function Sidebar() {
+export default function Sidebar({ sideBarRef }) {
   return (
-    <>
+    <div>
       <CssBaseline />
-      <Container className='sidebar' maxWidth='xl' >
-        <Stack direction='column' spacing={10}>
+      <Container className='sidebar'  ref={sideBarRef} maxWidth='xl' >
+        <Stack direction='column' spacing={4}>
           <div>
             <img className='logo' src={logo} alt="logo" />
           </div>
           <div>
-            <Stack direction='column' justifyContent='center' alignItems='center' spacing={5}>
+            <Stack className='sidebar-icon-container' direction='column' justifyContent='center' alignItems='center' spacing={5}>
               <IconButton>
                 <Home className='sidebar-icon'/>
               </IconButton>
@@ -32,6 +32,6 @@ export default function Sidebar() {
           </div>
         </Stack>
       </Container>
-    </>
+    </div>
   )
 }

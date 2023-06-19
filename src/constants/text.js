@@ -75,4 +75,24 @@ const CALLTOACTION = {
     heading: "Deliver MORE With Smart Lockers From Parcel Pending by Quadient",
 }
 
-export { HERO, ABOUT, FEATURES, MAP, TESTIMONIALS, CALLTOACTION }
+const SUBSCRIPTION = {
+    heading: 'Abonnement',
+    pricing: [
+        {
+            price: '100 XAF',
+            label: 'Debutant',
+            description: ['Une Adresse postale', 'Une boite postale', 'Un code de retrait'],
+        },{
+            price: '500 XAF',
+            label: 'Pro',
+            description: ['Une Adresse postale', 'Une boite postale', 'Un code de retrait'],
+        },{
+            price: '1000 XAF',
+            label: 'Entreprise',
+            description: ['Une Adresse postale', 'Une boite postale', 'Un code de retrait'],
+        },
+    ],
+
+}
+
+export { HERO, ABOUT, FEATURES, MAP, TESTIMONIALS, CALLTOACTION, SUBSCRIPTION }

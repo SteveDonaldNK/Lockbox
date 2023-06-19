@@ -1,24 +1,51 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import UserAppbar from '../../components/UserAppbar/UserAppbar'
-import './styles.css'
-import { accountBanner } from '../../constants/images'
-import { Button, Typography } from '@mui/material'
+import CodeRequest from '../../components/CodeRequest/CodeRequest'
+import Subscription from '../../components/Subscription/Subscription'
 
-export default function user() {
+import './styles.css'
+import ActiveSubscription from '../../components/ActiveSubscription/ActiveSubscription'
+import History from '../../components/History/History'
+import Settings from '../../components/Settings/Settings'
+
+export default function User() {
+
+  const appBarRef = useRef(null);
+  const sideBarRef = useRef(null);
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      appBarRef.current.style.width = `calc(${document.body.offsetWidth}px - ${sideBarRef.current.offsetWidth}px)`
+    }
+
+    const margin = {
+      top: appBarRef.current.offsetHeight * 1.5 ,
+      bottom: appBarRef.current.offsetHeight,
+      left: sideBarRef.current.offsetWidth ,
+      right: 5 ,
+    }
+
+    contentRef.current.style.padding = `${margin.top}px ${margin.right}% ${margin.bottom}px calc(${margin.left}px)`
+    appBarRef.current.style.width = `calc(${document.body.offsetWidth}px - ${sideBarRef.current.offsetWidth}px)`
+
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, [])
+  
+
   return (
     <div className='user-account'>
-        <Sidebar />
+        <Sidebar sideBarRef={sideBarRef} />
+        <UserAppbar appBarRef={appBarRef} />
         <div className='user-account-content'>
-          <UserAppbar />
-          <div className='user-account-banner'>
-            <img className='user-account-banner-image' src={accountBanner} alt="open box" />
-            <Typography>Votre boite est 
-              <Typography sx={{color: '#26AA26', fontWeight: 'bold'}} component='span'> fermée </Typography> 
-              <Typography sx={{color: '#FF3939', fontWeight: 'bold'}} component='span'>ouverte</Typography>
-            </Typography>
-            <Button className='code-btn' variant='contained' disableElevation>Demander un code de retrait</Button>
-          </div>
+          {/* <CodeRequest contentRef={contentRef} /> */}
+          {/* <Subscription contentRef={contentRef} /> */}
+          {/* <ActiveSubscription contentRef={contentRef}/> */}
+          {/* <History contentRef={contentRef} /> */}
+          <Settings contentRef={contentRef} />
         </div>
     </div>
   )

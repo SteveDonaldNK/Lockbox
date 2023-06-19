@@ -4,6 +4,8 @@
     margin: 0 !important;
     padding-top: 1rem;
     background: linear-gradient(120deg, #2F3CC9, #AA52DD);
+    position: fixed;
+    z-index: 10;
 }
 
 .sidebar-icon {

@@ -1,0 +1,6 @@
+.history-item::before {
+    content:  none !important;
+}
+
+.history-separator {
+}

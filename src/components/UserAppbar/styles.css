@@ -1,5 +1,8 @@
 .userAppbar {
-    width: 100% !important;
-    height: min-content !important;
-    padding: 1.5rem 0;
+    height: 10% !important;
+    display: flex !important;
+    background-color: var(--white-color) !important;
+    position: fixed;
+    z-index: 5;
+    right: 0;
 }
