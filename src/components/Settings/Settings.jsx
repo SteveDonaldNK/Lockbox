@@ -1,9 +1,10 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { Tabs, Tab, Typography, Box } from '@mui/material';
+import { Tabs, Tab, Typography, Box, Button } from '@mui/material';
 import Profile from '../Profile/Profile';
 
 import './styles.css'
+import Password from '../Password/Password';
 
 function TabPanel(props) {
   const { children, value, index} = props;
@@ -60,16 +61,13 @@ export default function Settings({ contentRef }) {
         >
             <Tab label="Mon Compte" {...a11yProps(0)} />
             <Tab label="Mot de passe" {...a11yProps(1)} />
-            <Tab label="Deconnexion" {...a11yProps(2)} />
+            <Button color='error' sx={{py: 1.5, px: 4}}>Disconnect</Button>
         </Tabs>
         <TabPanel value={value} index={0}>
             <Profile />
         </TabPanel>
         <TabPanel value={value} index={1}>
-            Mot de passe
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-            Deconnexion
+            <Password />
         </TabPanel>
       </Box>
     </Box>

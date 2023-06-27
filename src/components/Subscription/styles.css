@@ -8,6 +8,11 @@
     gap: 3rem;
 }
 
+.MuiDialog-container {
+    backdrop-filter: blur(0.15rem) !important;
+    background-color: transparent !important;
+  }
+
 .pricing-card {
     text-align: center;
     border: 0 !important;

@@ -12,3 +12,7 @@
     color: var(--white-color);
     transform: scale(120%);
 }
+
+.nav-icon.active .sidebar-icon {
+    color: var(--secondary-color);
+}

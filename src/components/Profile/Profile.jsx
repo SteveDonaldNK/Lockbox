@@ -7,14 +7,14 @@ export default function Profile() {
     <Box>
         <form action="">
             <Typography sx={{fontWeight: 'bold'}} variant='h5'>Gestion de compte</Typography> 
-            <Stack justifyContent='space-between' flexWrap='wrap' gap={5} direction='row'>
-                <TextField className="profile-input" type='text' label="Nom" variant="outlined" />
-                <TextField className="profile-input" type='text' label="Prenom" variant="outlined" />
-                <TextField className="profile-input" type='email' label="E-mail" variant="outlined" />
-                <TextField className="profile-input" type='tel' label="Telephone" variant="outlined" />
-                <TextField className="profile-input" type='text' label="Addresse" variant="outlined" />
+            <Stack mt={4} justifyContent='space-between' flexWrap='wrap' gap={5} direction='row'>
+                <TextField className="profile-input" size='small' type='text' label="Nom" variant="outlined" />
+                <TextField className="profile-input" size='small' type='text' label="Prenom" variant="outlined" />
+                <TextField className="profile-input" size='small' type='email' label="E-mail" variant="outlined" />
+                <TextField className="profile-input" size='small' type='tel' label="Telephone" variant="outlined" />
+                <TextField className="profile-input" size='small' type='text' label="Addresse" variant="outlined" />
             </Stack>
-            <Button type='submit' variant='contained'>Enregistrer</Button>
+            <Button sx={{float: 'right', marginTop: 5}} type='submit' variant='contained' disableElevation>Enregistrer</Button>
         </form>
     </Box>
   )

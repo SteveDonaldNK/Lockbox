@@ -7,7 +7,7 @@ import './styles.css'
 
 export default function History({ contentRef }) {
   return (
-    <Timeline ref={contentRef}>
+    <Timeline ref={contentRef} className='timeline-container'>
       <TimelineItem className='history-item'>
         <TimelineSeparator className='history-separator'>
           <TimelineDot color='primary' variant="filled" />
