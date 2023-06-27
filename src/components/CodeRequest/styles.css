@@ -16,6 +16,29 @@
     border-radius: 0 !important;
 }
 
+.dialog-btn {
+    margin: auto !important;
+    color: var(--primary-color) !important;
+    padding: 0.4rem 2rem !important;
+    border-radius: 30px !important;
+    border: 2px solid var(--primary-color)!important;
+}
+
+.dialog-btn.code-dialog {
+    color: var(--red-color) !important;
+    border: 2px solid var(--red-color)!important;
+}
+
+#code-dialog-title {
+    text-align: center !important;
+}
+
+.widrawal-code {
+    text-align: center;
+    font-size: 3rem !important;
+    color: var(--primary-color);
+}
+
 @media screen and (max-width: 900px) {
     .home-banner-image {
         width: 70% !important;

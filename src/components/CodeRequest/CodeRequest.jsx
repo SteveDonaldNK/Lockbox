@@ -5,12 +5,20 @@ import './styles.css'
 import { accountBanner } from '../../constants/images'
 
 export default function CodeRequest({ contentRef }) {
-  const [open, setOpen] = React.useState(false);
-    const handleOpen = () => {
-        setOpen(true);
+  const [codeDialogOpen, setCodeDialogOpen] = React.useState(false);
+  const [taxDialogOpen, setTaxDialogOpen] = React.useState(false);
+  const [taxPaid, setTaxPaid] = React.useState(false);
+    const handleCodeDialogOpen = () => {
+        setCodeDialogOpen(true);
     };
-    const handleClose = () => {
-        setOpen(false);
+    const handleCodeDialogClose = () => {
+        setCodeDialogOpen(false);
+    };
+    const handleTaxDialogOpen = () => {
+        setTaxDialogOpen(true);
+    };
+    const handleTaxDialogClose = () => {
+        setTaxDialogOpen(false);
     };
 
   return (
@@ -20,30 +28,51 @@ export default function CodeRequest({ contentRef }) {
             <Typography sx={{color: '#26AA26', fontWeight: 'bold'}} component='span'> fermée </Typography> 
             <Typography sx={{color: '#FF3939', fontWeight: 'bold'}} component='span'>ouverte</Typography>
         </Typography>
-        <Button onClick={handleOpen} className='code-btn' variant='contained' disableElevation>Demander un code de retrait</Button>
+        <Button onClick={taxPaid ? handleCodeDialogOpen : handleTaxDialogOpen} className='code-btn' variant='contained' disableElevation>Demander un code de retrait</Button>
 
         <Dialog
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="alert-dialog-title"
-            aria-describedby="alert-dialog-description"
-            slotProps={{
-                className: 'dialog-container',
+            open={codeDialogOpen}
+            onClose={handleCodeDialogClose}
+            aria-labelledby="code-dialog-title"
+            aria-describedby="code-dialog-description"
+            PaperProps={{
+                sx: {paddingY: 4, borderRadius: 4}
             }}
             
         >
-            <DialogTitle id="alert-dialog-title" sx={{fontWeight: 'bold', fontSize: '1.5rem'}}> 
-                {"Veuillez choisir l'offre qui vous convient"}
+            <DialogTitle id="code-dialog-title" sx={{fontWeight: 'bold', fontSize: '1.5rem'}}> 
+                {"Votre code de retrait"}
             </DialogTitle>
-            <DialogContent>
-                <DialogContentText id="alert-dialog-description">
-                    Let Google help apps determine location. This means sending anonymous
-                    location data to Google, even when no apps are running.
+            <DialogContent sx={{paddingBottom: 0}}>
+                <DialogContentText id="code-dialog-description">
+                    <Typography component='div'>Utilisez le code suivant pour ouvrir votre boite:</Typography>
+                    <Typography component='div' className='widrawal-code' sx={{fontWeight: 'bold'}}>785231</Typography>
                 </DialogContentText>
             </DialogContent>
             <DialogActions>
-                <Button onClick={handleClose}>Disagree</Button>
-                <Button onClick={handleClose} autoFocus>Agree</Button>
+                <Button className='dialog-btn code-dialog' onClick={handleCodeDialogClose} variant='outlined'>fermer</Button>
+            </DialogActions>
+        </Dialog>
+
+        <Dialog
+            open={taxDialogOpen}
+            onClose={handleTaxDialogClose}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+            PaperProps={{
+                sx: {paddingY: 4, borderRadius: 4}
+            }}
+        >
+            <DialogTitle id="tax-dialog-title" sx={{fontWeight: 'bold', fontSize: '1.5rem', textAlign: 'center'}}> 
+                {"Une seconde..."}
+            </DialogTitle>
+            <DialogContent>
+                <DialogContentText id="tax-dialog-description" sx={{color: 'black', textAlign: "center"}}>
+                    Pour continuer veuillez regler votre facture ( taxes postales ).
+                </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+                <Button onClick={handleTaxDialogClose} variant='outlined' className='dialog-btn'>Continuer</Button>
             </DialogActions>
         </Dialog>
     </div>
