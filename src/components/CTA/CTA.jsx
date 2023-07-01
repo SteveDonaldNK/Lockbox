@@ -9,7 +9,7 @@ export default function CTA() {
       <Typography variant='h2' className='cta-heading'>
         {CALLTOACTION.heading}
       </Typography>
-      <Button className='cta-btn' variant='outlined' disableElevation>Start using lockbox</Button>
+      <Button className='cta-btn' variant='outlined' disableElevation>COMMENCER À UTILISER I-BOX</Button>
     </div>
   )
 }

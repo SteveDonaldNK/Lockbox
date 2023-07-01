@@ -1,16 +1,15 @@
-import { Stack } from '@mui/material'
+import { Stack, Typography } from '@mui/material'
 import React from 'react'
 
-import { campost, dhl, fedex } from "../../constants/images";
+import { campost } from "../../constants/images";
 import "./styles.css"
 
 export default function Partners() {
   return (
     <div className='partner-container' >
-      <Stack className='partnerStack' direction={{md: 'row'}} spacing={{xs: '3rem'}}>
+      <Stack className='partnerStack' direction={{md: 'column'}}>
         <img className='campost' src={campost} alt="campost" />
-        <img className='partners' src={dhl} alt="dhl" />
-        <img className='partners' src={fedex} alt="fedex" />
+        <Typography mt={2} variant='body1'>Premier partenaire</Typography>
       </Stack>
     </div>
   )

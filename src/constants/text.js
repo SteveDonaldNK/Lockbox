@@ -1,116 +1,119 @@
 const HERO = {
-    heading: "THE GLOBAL LEADER IN SMART LOCKER SOLUTIONS",
-    subHeading: "Making parcel deliveries and returns easy and efficient for everyone.",
-    leftBtn: "START USING LOCKBOX",
-    rightBtn: "ABOUT US"
+    heading: "LA PREMIÈRE SOLUTIONS DE CASIERS INTELLIGENTS AU CAMEROUN",
+    subHeading: "Rendre les livraisons et les retours de colis faciles et efficaces pour tous.",
+    leftBtn: "COMMENCER À UTILISER I-BOX",
+    rightBtn: "À PROPOS DE NOUS"
 }
 
 const ABOUT = {
-    headingBlue: "Une réception ",
+    headingBlue: "Une réception",
     heading: "sans soucis pour vos courriers et colis",
     text: {
-        p1: `Découvrez notre réseau en plein essor de boîtes postales électroniques pour le retrait de vos colis et courriers. 
-        Simplifiez vos opérations commerciales avec nos emplacements pratiques et centralisés. 
-        Notre plateforme innovante vous offre une solution de retrait efficace et sécurisée, 
+        p1: `Découvrez notre réseau en pleine expansion de boîtes postales électroniques pour le retrait de vos colis et courriers.
+        Simplifiez vos opérations commerciales avec nos emplacements pratiques et centralisés.
+        Notre plateforme innovante vous offre une solution de retrait efficace et sécurisée,
         vous permettant d'étendre votre portée et d'offrir une expérience pratique à vos clients.`,
-        p2: `Rejoignez notre entreprise dynamique dès maintenant et profitez des avantages de notre réseau de boîtes postales électroniques. 
-        Simplifiez la gestion des colis et courriers entrants, améliorez votre efficacité opérationnelle et réduisez les coûts de livraison. 
-        Offrez à vos clients une expérience de retrait rapide, pratique et sécurisée grâce à notre solution centralisée. 
+        p2: `Rejoignez notre entreprise dynamique dès maintenant et profitez des avantages de notre réseau de boîtes postales électroniques.
+        Simplifiez la gestion des colis et courriers entrants, améliorez votre efficacité opérationnelle et réduisez les coûts de livraison.
+        Offrez à vos clients une expérience de retrait rapide, pratique et sécurisée grâce à notre solution centralisée.
         Optimisez votre processus de collecte avec nous.`
     }
 }
 
 const FEATURES = {
-    headingBlue: "Les benefices",
-    heading: " d'un abonnement chez lockbox",
+    headingBlue: "Les avantages",
+    heading: " d'un abonnement chez",
     features: {
         unique: {
-            heading: 'MORE Expertise',
-            text: `We are the leader in parcel locker solutions - supporting major residential, retail, carrier, university, and commercial clients around the world.`,
+            heading: "PLUS d'expertise",
+            text: "Nous sommes la premiere entreprise a offrir des solutions de casiers pour colis - soutenant les principaux clients résidentiels, commerciaux, universitaires et de transporteurs du Cameroun.",
         },
         lockers: {
-            heading: 'MORE Expertise',
-            text: `We offer a variety of locker types and sizes to support our clients’ ranging needs and business requirements.`,
+            heading: "PLUS de casiers",
+            text: "Nous proposons une variété de types et de tailles de casiers pour répondre aux besoins et aux exigences commerciales de nos clients.",
         },
-        parcel: {
-            heading: 'MORE Expertise',
-            text: 'Our solutions process nearly 75 million parcels annually from all major global carriers.',
+        time: {
+            heading: "PLUS de temps",
+            text: "Nos solutions vous aideront à gagner plus de temps en simplifiant le processus de récupération de vos colis. Grâce à nos casiers intelligents, vous n'aurez plus besoin d'attendre en file d'attente pour retirer vos colis au bureau de poste ou à un point de collecte",
         },
     }
 }
 
+const OVERVIEW = {
+    headingBlue: "Expérience de livraison ",
+    heading: "révolutionnaire avec notre solution de casiers intelligents",
+    text: {
+        p1: `Dites adieu aux soucis de livraison et découvrez une nouvelle façon pratique et sécurisée de recevoir vos colis. Notre solution de casiers intelligents vous permet de gérer vos livraisons de manière simple et efficace, où et quand vous le souhaitez. Plus besoin d'attendre à la maison ou de se rendre au bureau de poste. Avec notre réseau de casiers intelligents, vous pouvez récupérer vos colis à votre convenance, 24 heures sur 24, 7 jours sur 7. Simplifiez votre vie et offrez-vous une expérience de livraison révolutionnaire avec notre solution de casiers intelligents. Ne manquez pas cette opportunité, rejoignez-nous dès maintenant !`,
+    }
+}
+
 const MAP = {
-    heading: "Deliver MORE with Parcel Pending by Quadient Smart Lockers",
-    text: "",
+    heading: "Livrez PLUS et recevez vos colis en toute sécurité; avec les casiers intelligents",
 }
 
 const TESTIMONIALS = [
     {
-        neighborhood: 'Essos',
-        text: `"With more than 60% of online orders picked up in our stores, 
-        [the Parcel Pending by Quadient lockers give] our customers one more option 
-        and the added convenience to control how and when they get that order."`,
-        name: 'Evina Evina',
-        socialStatus: 'Economic operator'
+        neighborhood: 'Cradat',
+        text: `"La solution de casiers intelligents va révolutionner notre processus de gestion des colis. Nous allons optimiser notre logistique en offrant à nos clients une expérience de livraison rapide et pratique. Grâce à ces casiers, nos clients peurront récupérer leurs colis à tout moment, ce qui va considérablement réduire les retards de livraison et les problèmes de réacheminement."`,
+        name: 'Mbah Celine',
+        socialStatus: 'Opérateur économique'
     },{
         neighborhood: 'Essos',
-        text: `"The partnership with Quadient is completely in line with DHL’s strategy, 
-        offering greater flexibility for both customers and e-retailers. 
-        With a wide range of parcel lockers, we get closer to our customers 
-        and can in a simpler way be proactive in building up our delivery network.
-         Quadient’s solution also meets the strong demand we have on user-friendliness and simplicity in our customer interfaces."`,
-        name: 'Evina Evina',
-        socialStatus: 'Economic operator'
+        text: `"Notre entreprise va intégrer la solution de casiers intelligents pour gérer efficacement les livraisons de nos employés et faciliter le processus de retour des articles. Cette solution va grandement améliorer notre productivité et va réduire les perturbations causées par les retards de livraison ou les absences des employés. De plus, nos employés apprécient la flexibilité offerte par les casiers, qui leur permet de récupérer leurs colis à tout moment qui leur convient."`,
+        name: 'Arthur Onomo',
+        socialStatus: 'Chef d\'entreprise'
     },{
-        neighborhood: 'Essos',
-        text: `"With more than 60% of online orders picked up in our stores, 
-        [the Parcel Pending by Quadient lockers give] our customers one more option and 
-        the added convenience to control how and when they get that order."`,
-        name: 'Evina Evina',
-        socialStatus: 'Economic operator'
-    },
+        neighborhood: 'Ekounou', 
+        text: "En integrant la solution de casiers intelligents dans notre magasin, nous allons améliorer significativement le processus de livraison et de retrait des commandes en ligne.",
+        name: 'Gregoire Zogo', 
+        socialStatus: 'Commercant',
+    }
 ]
 
 const CALLTOACTION = {
-    heading: "Deliver MORE With Smart Lockers From Parcel Pending by Quadient",
-}
-
+        heading: "Gagnez en temps avec les casiers intelligents de I-BOX",
+    }
+    
 const HISTORY = [{
-    event: 'Ouverture',
-    notification: 'Boite ouverte',
-    date: '22-08-2001',
-}, {
-    event: 'Fermeture',
-    notification: 'Boite fermeture',
-    date: '06-12-2012',
-}, {
-    event: 'Bloque',
-    notification: 'Votre boite est bloquee',
-    date: '01-02-2022',
-}]
-
-const SUBSCRIPTION = {
-    heading: 'Abonnement',
-    pricing: [
-        {
-            period: '3 Jours',
-            price: '500 XAF',
+        event: 'Ouverture',
+        notification: 'Boîte ouverte',
+        date: '22-08-2001',
+    }, {
+        event: 'Fermeture',
+        notification: 'Boîte fermée',
+        date: '06-12-2012',
+    }, {
+        event: 'Bloqué',
+        notification: 'Votre boîte est bloquée',
+        date: '01-02-2022',
+    }]
+    
+    const NOTIFICATIONS = [
+        'Vous avez reçu un colis',
+        'Vous avez ouvert votre boîte',
+        'Vous avez refermé votre boîte',
+        'Vous avez essayé d\'ouvrir votre boîte à 3 reprises, votre boîte est bloquée. Veuillez nous contacter pour en savoir plus.'
+    ]
+    
+    const SUBSCRIPTION = {
+        heading: 'Abonnement',
+        pricing: [{
+            period: 'retrait',
+            price: '1500 XAF',
             label: 'Particulier',
-            description: ['Une Adresse postale', 'Une boite postale', 'Un code de retrait'],
+            description: ['Une adresse postale', 'Une boîte postale', 'Un code de retrait'],
         },{
             period: 'Mois',
-            price: '2500 XAF',
+            price: '2100 XAF',
             label: 'Entreprise XL',
-            description: ['Une Adresse postale', 'Une boite postale', 'Un code de retrait'],
+            description: ['Une adresse postale', 'Une boîte postale', 'Un code de retrait'],
         },{
             period: 'An',
             price: '25000 XAF',
             label: 'Entreprise XXL',
-            description: ['Une Adresse postale', 'Une boite postale', 'Un code de retrait'],
+            description: ['Une adresse postale', 'Une boîte postale', 'Un code de retrait'],
         }
-        ,
     ],
-
 }
 
-export { HERO, ABOUT, FEATURES, MAP, TESTIMONIALS, CALLTOACTION, SUBSCRIPTION, HISTORY }
+export { HERO, ABOUT, FEATURES, MAP, TESTIMONIALS, CALLTOACTION, SUBSCRIPTION, HISTORY, NOTIFICATIONS, OVERVIEW }

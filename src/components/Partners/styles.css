@@ -7,10 +7,9 @@
 }
 
 .partnerStack {
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding-top: 6% !important;
-    padding: var(--page-padding);
+    padding: 4% 4% 0!important;
 }
 
 .partner-container  {

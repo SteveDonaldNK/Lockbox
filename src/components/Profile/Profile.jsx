@@ -7,6 +7,7 @@ export default function Profile() {
     <Box>
         <form action="">
             <Typography sx={{fontWeight: 'bold'}} variant='h5'>Gestion de compte</Typography> 
+            <Typography color='GrayText' variant='body1'>Vous pouvez modifier ou ajouter des informations dans les champs suivant pour completer votre profil</Typography> 
             <Stack mt={4} justifyContent='space-between' flexWrap='wrap' gap={5} direction='row'>
                 <TextField className="profile-input" size='small' type='text' label="Nom" variant="outlined" />
                 <TextField className="profile-input" size='small' type='text' label="Prenom" variant="outlined" />

@@ -5,6 +5,8 @@
 
 .home-banner-image {
     width: 30rem;
+    height: auto;
+    aspect-ratio: 1;
     user-select: none;
 }
 

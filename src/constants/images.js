@@ -9,4 +9,4 @@ import map from "../assets/cameroon.png";
 import accountBanner from "../assets/user-account.jpg";
 import relax from "../assets/relax.jpg";
 
-export { heroImg, logo, dhl, fedex, campost, about, lockers, map, accountBanner, relax }
+export { heroImg, logo, campost, about, lockers, map, accountBanner, relax }

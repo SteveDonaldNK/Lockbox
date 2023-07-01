@@ -19,7 +19,7 @@ import { logo } from '../../constants/images';
 import { Stack } from '@mui/material';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About', 'Contact'];
+const navItems = ['Accueil', 'A propos', 'Contact'];
 
 /*
 xs, extra-small: 0px

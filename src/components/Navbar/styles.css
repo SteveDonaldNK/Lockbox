@@ -27,4 +27,6 @@
 
 .logo {
     height: 3.5rem;
+    width: auto;
+    aspect-ratio: 316/350;
 }

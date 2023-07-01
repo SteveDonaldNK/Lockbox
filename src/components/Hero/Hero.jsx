@@ -1,10 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Container, CssBaseline, Typography, Box, Stack, Button } from '@mui/material';
 
-import './styles.css'
 import { HERO } from '../../constants/text'
 
+import './styles.css'
+import LoginDialog from '../LoginDialog/LoginDialog';
+import RegisterDialog from '../RegisterDialog/RegisterDialog';
+
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+  const [openRegister, setRegisterOpen] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+
+  function handleLoginOpen() {
+    setOpen(true);
+  }
+
   return (
     <Container className='hero' maxWidth='xl'>
       <CssBaseline />
@@ -16,7 +27,7 @@ export default function Hero() {
           {HERO.subHeading}
         </Typography>
         <Stack className='heroBtnStack' direction='row' spacing={2}>
-          <Button className='heroBtn' variant='outlined' color='inherit'>
+          <Button onClick={handleLoginOpen} className='heroBtn' variant='outlined' color='inherit'>
             {HERO.leftBtn}
           </Button>
           <Button className='heroBtn hero-rightBtn' variant='contained' color='inherit' disableElevation>
@@ -24,6 +35,9 @@ export default function Hero() {
           </Button>
         </Stack>
       </Box>
+
+      <LoginDialog open={open} setOpen={setOpen} setRegisterOpen={setRegisterOpen} showPassword={showPassword} setShowPassword={setShowPassword} />
+      <RegisterDialog openRegister={openRegister} setRegisterOpen={setRegisterOpen} setOpen={setOpen} showPassword={showPassword} setShowPassword={setShowPassword} />
     </Container>
   )
 }

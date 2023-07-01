@@ -9,7 +9,7 @@ import './styles.css'
 import { Typography } from '@mui/material';
 import StarsIconOutlinedIcon from '@mui/icons-material/StarsOutlined';
 import DoorSlidingOutlinedIcon from '@mui/icons-material/DoorSlidingOutlined';
-import Inventory2OutlinedIcon from '@mui/icons-material/Inventory2Outlined';
+import { LockClock } from '@mui/icons-material';
 
 
 export default function Features() {
@@ -39,7 +39,7 @@ export default function Features() {
       <div className='feature-heading-container'>
         <Typography ref={ref} variant='h2' className={intersect ? 'feature-heading intersect' : 'feature-heading'}>
           <span className='feature-blue-heading'>{FEATURES.headingBlue}</span>
-          {FEATURES.heading}
+          {FEATURES.heading} <span style={{display: 'inline-block'}}>I-BOX</span>
         </Typography>
       </div>
       <div className='feature-timeline'>
@@ -74,14 +74,14 @@ export default function Features() {
         </TimelineItem>
         <TimelineItem className='feature-list'>
           <TimelineSeparator>
-            <Inventory2OutlinedIcon className='feature-icons' />
+            <LockClock className='feature-icons' />
           </TimelineSeparator>
           <TimelineContent sx={{padding: 0, margin: "0 0 2rem 1.5rem"}}>
             <Typography className='feature-subHeading'>
-              {FEATURES.features.unique.heading}
+              {FEATURES.features.time.heading}
             </Typography>
             <Typography color='GrayText'>
-              {FEATURES.features.unique.text}
+              {FEATURES.features.time.text}
             </Typography>
           </TimelineContent>
         </TimelineItem>

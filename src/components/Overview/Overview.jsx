@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from '@mui/material'
 import React from 'react'
-import { ABOUT } from '../../constants/text'
+import { OVERVIEW } from '../../constants/text'
 import { lockers } from '../../constants/images'
 import "./styles.css"
 
@@ -9,17 +9,14 @@ export default function About() {
     <div className='overview-container'>
         <Box className='overview-textBox' >
             <Typography className='overview-heading' variant='h2'>
-                <span className='overview-blue-heading'>{ABOUT.headingBlue}</span>
+                <span className='overview-blue-heading'>{OVERVIEW.headingBlue}</span>
                 <br />
-                {ABOUT.heading}
+                {OVERVIEW.heading}
             </Typography>
             <Typography my={2} color='GrayText'>
-                {ABOUT.text.p1}
+                {OVERVIEW.text.p1}
             </Typography>
-            <Typography my={2} color='GrayText'>
-                {ABOUT.text.p2}
-            </Typography>
-            <Button variant='outlined' className='overviewBtn'>START USING LOCKBOX</Button>
+            <Button variant='outlined' className='overviewBtn'>COMMENCER À UTILISER I-BOX</Button>
         </Box>
         <Box className='overview-imageBox'>
             <img className='overview-image' src={lockers} alt="Sure Delivery" />

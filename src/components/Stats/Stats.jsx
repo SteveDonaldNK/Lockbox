@@ -8,10 +8,10 @@ export default function Stats() {
       <Stack className='stat-stack' direction='row'>
           <Box className='stat-box'>
             <Typography className='stat' variant='h2'>
-              18K+
+              98%
             </Typography>
             <Typography className='stat-label'>
-              Installations in Cameroon
+              D'avis positive sur notre solution
             </Typography>
           </Box>
           <Box className='stat-box'>
@@ -19,15 +19,15 @@ export default function Stats() {
               18K+
             </Typography>
             <Typography className='stat-label'>
-              Installations in Cameroon
+              Installations prévu au Cameroun
             </Typography>
           </Box>
           <Box className='stat-box'>
             <Typography className='stat' variant='h2'>
-              18K+
+              5M+
             </Typography>
             <Typography className='stat-label'>
-              Installations in Cameroon
+              D'utilisateurs visé au Cameroun
             </Typography>
           </Box>
       </Stack>

@@ -8,7 +8,7 @@ export default function Map() {
   return (
     <div className='map-container'>
         <Typography className='map-heading' variant='h2'>
-            {MAP.heading}
+            {MAP.heading} <span style={{display: 'inline-block'}}>I-BOX</span>
         </Typography>
         <img className='map' src={map} alt="map" />
     </div>

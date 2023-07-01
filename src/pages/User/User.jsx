@@ -24,7 +24,7 @@ export default function User() {
      } else if (activeTab === 'settings') {
       return <Settings contentRef={contentRef} />;
      } else {
-      return <CodeRequest contentRef={contentRef} />;
+      return <ActiveSubscription contentRef={contentRef} />;
      }
   }
 
@@ -51,7 +51,7 @@ export default function User() {
 
   return (
     <div className='user-account'>
-        <Sidebar setActiveTab={setActiveTab} sideBarRef={sideBarRef} />
+        <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} sideBarRef={sideBarRef} />
         <UserAppbar appBarRef={appBarRef} />
         <div className='user-account-content'>
         {

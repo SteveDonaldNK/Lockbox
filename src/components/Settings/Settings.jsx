@@ -61,7 +61,7 @@ export default function Settings({ contentRef }) {
         >
             <Tab label="Mon Compte" {...a11yProps(0)} />
             <Tab label="Mot de passe" {...a11yProps(1)} />
-            <Button color='error' sx={{py: 1.5, px: 4}}>Disconnect</Button>
+            <Button color='error' sx={{py: 1.5, px: 4}}>Déconnexion</Button>
         </Tabs>
         <TabPanel value={value} index={0}>
             <Profile />

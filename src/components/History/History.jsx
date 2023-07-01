@@ -18,7 +18,7 @@ export default function History({ contentRef }) {
           <TimelineItem className='history-item' key={index}>
             <TimelineSeparator className='history-separator'>
               <TimelineDot color={ 
-                                    item.event === 'Bloque' ? 'error' : 'primary'
+                                    item.event === 'Bloqué' ? 'error' : 'primary'
                             } variant={
                                 item.event === 'Fermeture' ? 'outlined' : 'filled'
                               } />
@@ -44,27 +44,6 @@ export default function History({ contentRef }) {
           </TimelineItem>
         ))
       }
-
-      {/* <TimelineItem className='history-item'>
-        <TimelineSeparator className='history-separator'>
-          <TimelineDot variant="outlined" color="primary" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Fermeture</TimelineContent>
-      </TimelineItem>
-      <TimelineItem className='history-item'>
-        <TimelineSeparator className='history-separator'>
-          <TimelineDot variant="filled" color="error" />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>Bloque</TimelineContent>
-      </TimelineItem>
-      <TimelineItem className='history-item'>
-        <TimelineSeparator className='history-separator'>
-          <TimelineDot variant="filled" color='primary'/>
-        </TimelineSeparator>
-        <TimelineContent>Ouverture</TimelineContent>
-      </TimelineItem> */}
     </Timeline>
   )
 }

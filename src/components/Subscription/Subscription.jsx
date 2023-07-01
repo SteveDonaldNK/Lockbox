@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, CardActions, CardContent, Stack, Typography, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material'
+import { Button, Card, CardActions, CardContent, Stack, Typography } from '@mui/material'
 import { SUBSCRIPTION } from '../../constants/text'
 
 import './styles.css'
